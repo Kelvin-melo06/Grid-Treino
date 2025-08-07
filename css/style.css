@@ -1,9 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Nata+Sans:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barriecito&display=swap');
 
 *{
     margin: 0;
     padding: 0;
     font-family: "Nata Sans" sans-serif;
+    box-sizing: border-box;
+}
+
+img{
+    width: 40%;
 }
 
 .containerGeralGrid{
@@ -45,7 +51,7 @@
 }
 
 .navPrincipal li:nth-child(2){
-    margin-left: 180px;
+    margin-left: 160px;
 }
 
 .navPrincipal li a{
@@ -53,3 +59,40 @@
     text-decoration: none;
     font-size: 18px;
 }
+
+h1{
+    text-align: center;
+    font-size: 18px;
+    margin: 15px auto 20px;
+    font-family: "Barriecito", system-ui;
+    color: #19C2F7 ;
+}
+
+.conteudoPrincipal{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.paragrafosConteudo p{
+    text-align: justify;
+    padding: 18px;
+    max-width: 480px;
+    letter-spacing: 1px;
+    line-height: 22px;
+    text-indent: 10px;
+}
+
+.imgs img,
+.conteudoPrincipal img{
+    width: 300px;
+    border-top-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.476);
+}
+
+.conteudoPrincipal img{
+    margin-top: 10px;
+}
+

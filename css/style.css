@@ -1,11 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Nata+Sans:wght@100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Barriecito&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
 *{
     margin: 0;
     padding: 0;
-    font-family: "Nata Sans" sans-serif;
     box-sizing: border-box;
+}
+
+body{
+    padding-bottom: 200px;
 }
 
 img{
@@ -50,22 +54,30 @@ img{
    font-weight: bolder;
 }
 
+.navPrincipal li:nth-child(1)>a{
+    font-size: 40px;
+}
+
 .navPrincipal li:nth-child(2){
-    margin-left: 160px;
+    margin-left: 70px;
 }
 
 .navPrincipal li a{
     color:#595959;
     text-decoration: none;
-    font-size: 18px;
+    font-size: 20px;
 }
 
 h1{
     text-align: center;
-    font-size: 18px;
+    font-size: 22px;
     margin: 15px auto 20px;
     font-family: "Barriecito", system-ui;
-    color: #19C2F7 ;
+    color: #A87932 ;
+}
+
+.paragrafosConteudo{
+    background-color: #d9d9d97c;
 }
 
 .conteudoPrincipal{
@@ -82,17 +94,66 @@ h1{
     letter-spacing: 1px;
     line-height: 22px;
     text-indent: 10px;
+    font-size: 18px;
+    font-family: "Inter" sans-serif;
 }
 
 .imgs img,
 .conteudoPrincipal img{
-    width: 300px;
-    border-top-left-radius: 5px;
-    border-bottom-right-radius: 5px;
+    width: 100%;
+    height: auto;
     box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.476);
 }
 
-.conteudoPrincipal img{
-    margin-top: 10px;
+.containerFormCadastro{
+    background-color: #2A3645 ;
+    width: 100%;
+    height: 300px;
 }
+
+.formContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.formContainer h2{
+    text-align: center;
+    font-size: 22px;
+    margin: 15px auto 20px;
+    font-family: "Barriecito", system-ui;
+    color: #A87932 ;
+    margin-top: 20px;
+}
+
+.formContainer input{
+    display: block;
+    padding: 10px;
+    margin: 15px auto 15px;
+    border-radius: 3px;
+    border: 1px solid #d9d9d97c;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.81);
+    cursor: pointer;
+}
+
+.formContainer input:hover{
+    background-color: rgba(255, 255, 255, 0.925);
+}
+
+.formContainer input[type=submit]{
+    background-color: #A87932;
+    color: white;
+    width: 400px;
+    margin: 0 auto 10px;
+    border: 1px solid #d9d9d97c;
+    font-family: "Barriecito", system-ui;
+    font-size: 18px;
+}
+
+.formContainer input[type=submit]:hover{
+    background-color: #c59753;
+}
+
 

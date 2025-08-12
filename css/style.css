@@ -73,7 +73,7 @@ h1 {
 }
 
 .navPrincipal li:nth-child(2) {
-  margin-left: 310px;
+  margin-left: 70px;
 }
 
 .navPrincipal li a {
@@ -217,6 +217,18 @@ h1 {
     gap: 5px;
     grid-auto-flow: row;
   }
+  .grid2coluna{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    width: 1100px;
+    justify-items: flex-end;
+    position: relative;
+  }
+  .grid2img img{
+    position: absolute;
+    width: 600px;
+  }
   .paragrafosConteudo p{
      width: 700px;
   }
@@ -228,18 +240,25 @@ h1 {
   }
   .alinhamento{
     position: relative;
+    top: -44px;
+  }
+  .alinhamento2{
+    position: relative;
     top: -23px;
   }
   .containerFormCadastro{
     position: relative;
-    left: 500px;
+    left: 560px;
     margin-bottom: 5px;
     top: -2px;
     width: 100%;
-    background-color: transparent;
+    background-color: #d9d9d940;
+    border-radius: 30%;
+    padding: 30px;
   }
   .blocosDeArtigoPrincipal{
     width: 600px;
   }
+
 }
 
